@@ -59,7 +59,7 @@ Key features include:
 - SMOTE applied to training folds only, inside an `imblearn` Pipeline (preprocessing + SMOTE + classifier)
 - Decision threshold chosen on out-of-fold training predictions, never on the test set
 - Test set used once; compared against majority-class and logistic-regression baselines
-- See `churn_prediction_corrected.py` for the full pipeline
+- Implemented in sections 8–9 of `churn_prediction.ipynb`
 
 > **Correction note:** an earlier version of this notebook applied SMOTEENN to the full dataset *before* the train-test split. Synthetic and cleaned rows leaked into the test set, which inflated the reported accuracy/F1 (~95%). Those figures are not valid estimates of real-world performance and have been replaced by the results below.
 
